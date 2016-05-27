@@ -6,7 +6,7 @@ class Collections
 {
 
     /**
-     * get item of an array by index , aceepting nested index
+     * Get item of an array by index , accepting nested index
      *
      ** __::get(['foo' => ['bar' => 'ter']], 'foo.bar');
      ** // → 'ter'
