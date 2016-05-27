@@ -27,7 +27,7 @@ class Loader
         'isNumber' => '\Bottomline\Objects',
         'isObject' => '\Bottomline\Objects',
         'isString' => '\Bottomline\Objects',
-        'get' => 'Bottomline\Collection',
+        'get' => 'Bottomline\Collections',
     ];
 
     public static function __callStatic($name, $arguments = [])

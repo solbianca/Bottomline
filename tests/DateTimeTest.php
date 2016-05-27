@@ -1,7 +1,5 @@
 <?php
 
-require(__DIR__ . '/../vendor/autoload.php');
-
 class DateTimeTest extends PHPUnit_Framework_TestCase
 {
     public function testNow()
