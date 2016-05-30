@@ -1,7 +1,5 @@
 <?php
 
-//require_once('../bootstrap.php');
-
 class DateTimeTest extends PHPUnit_Framework_TestCase
 {
     public function testNow()
