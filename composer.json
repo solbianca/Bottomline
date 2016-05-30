@@ -1,0 +1,22 @@
+{
+    "name": "solbianca/underscore",
+    "description": "A full-on PHP manipulation utility-belt that provides support for the usual functional.",
+    "keywords": [
+        "__",
+        "underscore",
+        "library",
+        "utility",
+        "functions",
+        "datetime",
+        "arrays"
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "files": ["bootstrap.php"],
+        "psr-4": {"Underscore\\": "src/Underscore"}
+    }
+}
