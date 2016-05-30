@@ -1,7 +1,5 @@
 <?php
 
-//require_once('../bootstrap.php');
-
 class ObjectsTest extends PHPUnit_Framework_TestCase
 {
     public function testIsArray()

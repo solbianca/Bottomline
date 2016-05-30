@@ -1,7 +1,5 @@
 <?php
 
-//require_once('../bootstrap.php');
-
 class CollectionTest extends PHPUnit_Framework_TestCase
 {
     public function testGet()
