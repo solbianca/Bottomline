@@ -69,4 +69,26 @@ class Objects
     {
         return is_string($argument);
     }
+
+    /**
+     * Get the type of a variable
+     *
+     * @param $argument
+     * @return string Possibles values for the returned string are:
+     * "boolean"
+     * "integer"
+     * "double" (for historical reasons "double" is
+     * returned in case of a float, and not simply
+     * "float")
+     * "string"
+     * "array"
+     * "object"
+     * "resource"
+     * "NULL"
+     * "unknown type"
+     */
+    public function typeOf($argument)
+    {
+        return gettype($argument);
+    }
 }
