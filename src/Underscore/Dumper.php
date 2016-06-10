@@ -201,17 +201,24 @@ class Dumper
     private static function _trace()
     {
         $bt = debug_backtrace();
-        $len = count($bt) - 1;
+        $count = count($bt);
+        $len = $count;
+        for ($i = 0; $i < $count; $i++) {
+            if (isset($bt[$i]['class']) && self::class !== $bt[$i]['class'] && 'Underscore\Loader' !== $bt[$i]['class']) {
+                $len = $i + 1;
+                break;
+            }
+        }
         $trace = $bt[$len];
         $line = $bt[$len - 1]['line'];
-        $file = basename($trace['file']);
-        $class = (isset($bt[$len]['class']) ? $bt[$len]['class'] : basename($trace['file']));
-        if (isset($bt[$len]['class'])) {
-            $type = $bt[$len]['type'];
+        $file = basename($bt[$len - 1]['file']);
+        $class = (isset($trace['class']) ? $trace['class'] : $bt[$len - 1]['file']);
+        if (isset($trace['class'])) {
+            $type = $trace['type'];
         } else {
             $type = ' ';
         }
-        $function = isset($bt[$len]['function']) ? $bt[$len]['function'] : '';
+        $function = isset($trace['function']) ? $trace['function'] : '';
 
         return sprintf('%s%s%s() line %s <small>(in %s)</small>', $class, $type, $function, $line, $file);
     }

@@ -21,12 +21,11 @@ class Loader
         'd' => '\Underscore\Dumper',
         'dd' => '\Underscore\Dumper',
         'p' => '\Underscore\Dumper',
-        'pp' => '\Underscore\Dumper',
+        'pd' => '\Underscore\Dumper',
         'ds' => '\Underscore\Dumper',
         'dsd' => '\Underscore\Dumper',
         'mem' => '\Underscore\Dumper',
         'timer' => '\Underscore\Dumper',
-        'trace' => '\Underscore\Dumper',
         // Arrays
         'append' => '\Underscore\Arrays',
         'compact' => '\Underscore\Arrays',
