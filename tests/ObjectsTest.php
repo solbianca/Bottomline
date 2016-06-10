@@ -80,4 +80,18 @@ class ObjectsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(__::isString($str6), false);
         $this->assertEquals(__::isString($str7), false);
     }
+
+    public function testGetType()
+    {
+        $var1 = 1;
+        $var2 = '1';
+        $var3 = true;
+        $var4 = null;
+        $var5 = 'false';
+        $var6 = [];
+        $var7 = '';
+        $var8 = STDIN;
+        $var9 = new stdClass;
+        $var10 = 1.0;
+    }
 }

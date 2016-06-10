@@ -41,6 +41,7 @@ class Loader
         'isNumber' => '\Underscore\Objects',
         'isObject' => '\Underscore\Objects',
         'isString' => '\Underscore\Objects',
+        'typeOf' => '\Underscore\Objects',
         // Collections
         'filter' => 'Underscore\Collections',
         'first' => 'Underscore\Collections',

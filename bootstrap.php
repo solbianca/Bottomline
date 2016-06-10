@@ -22,6 +22,13 @@ require __DIR__ . '/src/Underscore/Loader.php';
  * @method static trace() Backtrace
  *
  * Objects Functions
+ * @method static bool isArray($argument) Finds whether a variable is an array
+ * @method static bool isFunction($argument) Verify that the contents of a variable can be called as a function
+ * @method static bool isNull($argument) Finds whether a variable is null
+ * @method static bool isNumber($argument) Finds whether a variable is a number or a numeric string
+ * @method static bool isObject($argument) Finds whether a variable is an object
+ * @method static bool isString($argument) Find whether the type of a variable is string
+ * @method static string typeOf($argument) Get the type of a variable
  *
  * Collections Functions
  * @method static array filter(array $array = [], Closure $closure) Returns the values in the collection that pass the truth test.
